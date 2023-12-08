@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Hedvig+Letters+Serif:opsz@12..24&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hedvig Letters Serif', serif;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: fit-content;
+    background-color: rgba(252, 232, 200, 0.664);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.container img {
+    border-radius: 50%;
+    animation: up 1s;
+}
+
+.container h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    animation: up 1.5s;
+
+}
+
+.container p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    animation: up 1.5s;
+
+}
+
+.link {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    animation: up 3s;
+
+}
+
+.link span {
+    font-size: 16px;
+}
+
+.link div {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+
+.newsletter {
+    width: 500px;
+    /* height: 225px; */
+    background-color: rgba(252, 232, 200, 0.664);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter h1 {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hedvig Letters Serif', serif;
+    border: 2px solid black;
+    outline: none;
+    padding: 0 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.newsletter input::placeholder {
+    color: black;
+}
+
+.newsletter button {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Hedvig Letters Serif', serif;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.newsletter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+
+.newsletter button:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:535px) {
+    body {}
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        height: 70%;
+        top: 0;
+        background-color: transparent;
+    }
+
+    .newsletter {
+        height: fit-content;
+    }
+
+    .newsletter h1 {
+        font-size: 18px;
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
